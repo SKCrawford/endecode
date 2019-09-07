@@ -1,0 +1,57 @@
+{
+  "name": "endecode",
+  "version": "0.0.0",
+  "description": "A simple encode/decode HTTP server",
+  "main": "index.ts",
+  "scripts": {
+    "prestart": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "start:log": "yarn start > all.log 2>&1",
+    "start:dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.2"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "modulePathIgnorePatterns": [
+      ".old$"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKCrawford/endecode.git"
+  },
+  "author": "SKCrawford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SKCrawford/endecode/issues"
+  },
+  "homepage": "https://github.com/SKCrawford/endecode#readme"
+}

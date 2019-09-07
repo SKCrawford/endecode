@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": true,
+    "importHelpers": true,
+    "incremental": true,
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "paths": {},
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "exclude": ["node_modules", "dist", "**/*.old", "**/*.old/*"]
+}
